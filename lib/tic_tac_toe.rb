@@ -67,10 +67,16 @@ def turn(board)
     if valid_move?(board,input) == true
         move(board,input)
        display_board(board)
-       else
+       elsif
         valid_move?(board,input) == false
          puts "Invalid move, try again!"
+         until valid_move(board, input) == true
+       input=gets.strip
+       input=input_to_index(input)
        end
+     else
+       turn(board)
+      end
     end
 end
 
