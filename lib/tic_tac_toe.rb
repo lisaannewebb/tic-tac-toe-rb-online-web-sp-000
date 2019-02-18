@@ -70,9 +70,6 @@ def turn(board)
        else
         valid_move?(board,input) == false
          puts "Invalid move, try again!"
-         until valid_move(board, input) == true
-           move(board,input)
-           display_board(board)
        end
     end
 end
