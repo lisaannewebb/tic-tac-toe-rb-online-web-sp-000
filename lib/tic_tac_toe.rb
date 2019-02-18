@@ -64,12 +64,12 @@ def turn(board)
   puts "Please enter 1-9:"
   input=gets.strip
   input=input_to_index(input)
-    if valid_move?(input) == true
+    if valid_move?(board,index) == true
         move(index,current_player)
        display_board
      else
-        valid_move?(input) == false
-         until valid_move(input) == true
+        valid_move?(board,index) == false
+         until valid_move(board,index) == true
          puts "Invalid move, try again!"
        input=gets.strip
        input=input_to_index(input)
