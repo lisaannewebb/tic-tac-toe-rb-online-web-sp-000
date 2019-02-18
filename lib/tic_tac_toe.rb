@@ -65,8 +65,7 @@ def turn(board)
   input=gets.strip
   input=input_to_index(input)
     if valid_move?(board,input) == true
-        move(board,input)
-       display_board(board)
+        board[index]=marker
      else
         valid_move?(board,input) == false
          puts "Invalid move, try again!"
