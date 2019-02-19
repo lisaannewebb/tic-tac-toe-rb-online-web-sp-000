@@ -68,8 +68,10 @@ def turn(board)
     move(board,input)
     display_board(board)
   else
-    turn(board)
-    end
+    puts "Invalid move, try again!"
+    until valid_move?(board,input) == true 
+    move(board,input)
+  end
 end
 
 
