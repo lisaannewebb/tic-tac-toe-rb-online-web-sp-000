@@ -73,6 +73,7 @@ def turn(board)
     move(board,input)
   end
 end
+end
 
 
 #turn_count
